@@ -4,6 +4,38 @@ Supervised Learning Challenge Module 20
 by Sungmin Yim
 
 ## Credit Risk Analysis Report ##
+Various techniques were used to train and evaluate a model based on loan risk. Utilizing a dataset encompassing historical lending activities obtained from a peer-to-peer lending services company, a model was constructed to discern the creditworthiness of borrowers.
+To determine if logistic regression models could accurately predict healthy loans versus high-risk loans using original data versus resampled data, I used:
+  * sklearn `LogisticRegression`
+  * scikit-learn `train_test_split`
+  * confusion matrix
+  * classification report
+
+## Results
+* Machine Learning Model 1:
+  * __Description of Model 1:__ Logistic regression model using original data.  
+  * __Accuracy:__ 0.99 
+  * __Precision:__ 
+      * Class (0): 1.00
+      * Class (1): 0.85
+  * __Recall:__
+      * Class (0): 0.99
+      * Class (1): 0.91
+
+* Machine Learning Model 2:
+  * __Description of Model 2:__ Logistic regression model using resampled data. 
+  * __Accuracy:__ 0.99 
+  * __Precision:__ 
+      * Class (0): 1.00
+      * Class (1): 0.84
+  * __Recall:__ 
+      * Class (0): 0.99
+      * Class (1): 0.99  
+
+## Summary ##
+The logistic regression model demonstrated strong overall performance. The healthy loans class performed best and had a precision of 1.00 and a recall of 0.99 in both models. However, the high-risk loans class had a precision of 0.85 and a recall of 0.91, suggesting a tendency for more false positives than false negatives.
+
+Logistic regression models show promise in predicting both healthy and high-risk loans based on the utilized features. However, further evaluation against diverse datasets is crucial to confirm the model's suitability for predicting the health status of loans before implementation.
 
 ## Instructions ##
 * Split the Data into Training and Testing Sets

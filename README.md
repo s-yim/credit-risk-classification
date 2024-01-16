@@ -18,7 +18,7 @@ by Sungmin Yim
 
 2. Create the labels set (`y`) from the “loan_status” column, and then create the features (`X`) DataFrame from the remaining columns.
 
-`NOTE:` A value of 0 in the “loan_status” column means that the loan is healthy. A value of 1 means that the loan has a high risk of defaulting.
+    `NOTE:` A value of 0 in the “loan_status” column means that the loan is healthy. A value of 1 means that the loan has a high risk of defaulting.
 
 3. Split the data into training and testing datasets by using `train_test_split`.
 
